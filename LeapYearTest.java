@@ -14,5 +14,10 @@ public class LeapYearTest {
 		LeapYear obj = new LeapYear();
 		assertEquals(false,obj.isLeapYear(1601));
 	}
+	@Test
+	public void testNegativeYear() {
+		LeapYear obj = new LeapYear();
+		assertEquals(false,obj.isLeapYear(-1500));
+	}
 
 }
